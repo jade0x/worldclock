@@ -39,7 +39,7 @@ function updateTime() {
   let newyorkElement = document.querySelector("#newyork");
   let newyorkDateElement = newyorkElement.querySelector(".date");
   let newyorkTimeElement = newyorkElement.querySelector(".time");
-  let newyorkCurrent = moment().tz("America / New_York;");
+  let newyorkCurrent = moment().tz("America/New_York");
   newyorkDateElement.innerHTML = newyorkCurrent.format("dddd, MMMM D");
   newyorkTimeElement.innerHTML = newyorkCurrent.format(
     "h:mm:ss[<small>]A[</small>]"
@@ -48,3 +48,24 @@ function updateTime() {
 
 updateTime();
 setInterval(updateTime, 1000);
+
+function updateCity(event) {
+  let cityTimeZone = event.target.value;
+  let cityName = cityTimeZone.replace("_", " ").split("/")[1];
+  let cityTime = moment().tz(cityTimeZone);
+  let citiesElement = document.querySelector("#city-clocks");
+  citiesElement.innerHTML = `
+  <article class="city">
+            <div>
+              <h2>${cityName}</h2>
+              <div class="date">${cityTime.format("dddd, MMMM D")}</div>
+            </div>
+            <div class="time">${cityTime.format(
+              "h:mm:ss[<small>]A[</small>]"
+            )}</div>
+          </article>
+  `;
+}
+
+let citySelectElement = document.querySelector("#city");
+citySelectElement.addEventListener("change", updateCity);

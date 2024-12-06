@@ -60,12 +60,12 @@ main {
 
 h1 {
   text-align: center;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 500;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.2rem;
   font-weight: 500;
 }
 
@@ -79,10 +79,11 @@ h2 {
   background-color: white;
   border-radius: 20px;
   box-shadow: 1px 1px 17px 5px rgba(79, 70, 79, 0.45);
+  font-size: 1.5rem;
 }
 
 .searchbar {
-  padding: 30px 0px;
+  padding: 30px 0px 15px 0px;
   max-width: 90%;
   margin: 0px auto;
 }
@@ -95,7 +96,7 @@ h2 {
   border-radius: 10px;
   justify-content: left;
   font-family: "Rajdhani", sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 #city-clocks {
@@ -106,7 +107,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   margin: 5px 0px;
-  padding: 20px 0px 15px 0px;
+  padding: 15px 0px 10px 0px;
   justify-content: space-between;
   border-top: 1px solid #c97cab3d;
 }
@@ -114,11 +115,11 @@ h2 {
 .time {
   flex-direction: column;
   margin-top: auto;
-  font-size: 4rem;
+  font-size: 3.2rem;
 }
 
 .time small {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 footer {
