@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.rajdhani-light {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.rajdhani-regular {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rajdhani-medium {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.rajdhani-semibold {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.rajdhani-bold {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+html {
+  /* 
+  Default browser font size - 16px
+  Setting 62.5% so 1rem = 10px
+  */
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh; /*set to full viewport height*/
+  display: flex;
+  flex-direction: column;
+  background-image: url("/../src/PurpleMapWallpaper.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.6rem; /*set base font to 16px*/
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+#clock-app {
+  box-sizing: border-box;
+  display: block;
+  width: 95%;
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 25px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 1px 1px 17px 5px rgba(79, 70, 79, 0.45);
+}
+
+.searchbar {
+  padding: 30px 0px;
+  max-width: 90%;
+  margin: 0px auto;
+}
+
+.searchbar select {
+  margin: 3px auto;
+  width: 100%;
+  padding: 5px 15px 5px 7px;
+  border: 0;
+  border-radius: 10px;
+  justify-content: left;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 2rem;
+}
+
+#city-clocks {
+  padding: 10px 0px 0px 0px;
+}
+
+.city {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px 0px;
+  padding: 20px 0px 15px 0px;
+  justify-content: space-between;
+  border-top: 1px solid #c97cab3d;
+}
+
+.time {
+  flex-direction: column;
+  margin-top: auto;
+  font-size: 4rem;
+}
+
+.time small {
+  font-size: 2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0px 10px 0px;
+  font-weight: 400;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0px 10px 0px;
+  font-weight: 400;
+  color: #6d418c;
+}
+
+footer a {
+  color: #e585b2;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+footer a:hover {
+  font-style: italic;
+  color: #b269a0;
+}

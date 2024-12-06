@@ -3,37 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      type="image/png"
+      sizes="16x16"
+      rel="icon"
+      href=".../icons8-square clock-ios_filled-16.png"
+    />
+    <link
+      type="image/png"
+      sizes="32x32"
+      rel="icon"
+      href=".../icons8-square clock-ios_filled-32.png"
+    />
+    <link
+      type="image/png"
+      sizes="72x72"
+      rel="icon"
+      href=".../icons8-square clock-ios_filled-72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      sizes="72x72"
+      href=".../icons8-square clock-ios_filled-72.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/styles.css" />
-    <title>World Clocks - Jade G</title>
+    <title>World Clocks App</title>
   </head>
   <body>
-    <div>
-      <section>
-        <h1>World Clocks</h1>
-        <select name="" id="">
-          <option value="">Search for a city...</option>
-          <option value="">Sydney</option>
-          <option value="">London</option>
-        </select>
-      </section>
-      <section id="city-clocks">
-        <article class="city">
-          <h2>Sydney</h2>
-          <div>5 December 2024</div>
-          <div>2:11 PM</div>
-        </article>
-        <article class="city">
-          <h2>London</h2>
-          <div>5 December 2024</div>
-          <div>2:11 PM</div>
-        </article>
-      </section>
-    </div>
+    <main>
+      <div id="clock-app">
+        <section>
+          <h1>World Clocks</h1>
+          <article class="searchbar">
+            <select name="" id="">
+              <option value="">Search for a city...</option>
+              <option value="">Sydney</option>
+              <option value="">London</option>
+            </select>
+          </article>
+        </section>
+        <section id="city-clocks">
+          <article class="city">
+            <div>
+              <h2>Sydney</h2>
+              <div class="date">5 December 2024</div>
+            </div>
+            <div class="time">2:11<small>PM</small></div>
+          </article>
+          <article class="city">
+            <div>
+              <h2>Sydney</h2>
+              <div class="date">5 December 2024</div>
+            </div>
+            <div class="time">2:11<small>PM</small></div>
+          </article>
+        </section>
+      </div>
+    </main>
     <footer>
-      This project was coded by Jade Garafola and is
-      <a href="https://github.com/jade0x/worldclock" target="_blank"
-        >open sourced on GitHub</a
-      >
+      This project was coded by
+      <a href="https://github.com/jade0x">Jade Garafola</a>, is open-sourced on
+      <a href="https://github.com/jade0x/worldclock">GitHub</a> and is host on
+      <a href="https://lustrous-haupia-61f677.netlify.app/">Netlify</a>
     </footer>
     <script src="src/index.js"></script>
   </body>
