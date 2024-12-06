@@ -68,6 +68,7 @@ function updateCity(event) {
               "h:mm:ss[<small>]A[</small>]"
             )}</div>
           </article>
+          <a href="/">< Back</a>
   `;
 }
 
